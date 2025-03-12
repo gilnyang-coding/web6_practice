@@ -1,0 +1,74 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+div.mainContainer {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(120px, 1fr) minmax(350px, 5fr);
+    grid-template-columns: minmax(200px, 1fr) minmax(450px, 6fr);
+}
+
+div.logo {
+    box-sizing: border-box;
+    margin: 0px 10px 10px 0px;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-bottom-right-radius: 5px;
+}
+
+div.topMenuContainer {
+    box-sizing: border-box;
+    margin: 0px 0px 10px 10px;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-bottom-left-radius: 5px;
+}
+
+div.sideMenuContainer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    box-sizing: border-box;
+    margin: 10px 10px 10px 0px;
+    border-top: 1.5px solid black;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.my {
+    border-bottom: 1.5px solid black;
+}
+
+fieldset {
+    border: none;
+}
+
+.calendarContainer {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+    margin: 10px 0px 0px 10px;
+    border-top: 1.5px black solid;
+    border-left: 1.5px black solid;
+    border-top-left-radius: 5px;
+    display: grid;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendarDate {
+    margin: 5px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+}
